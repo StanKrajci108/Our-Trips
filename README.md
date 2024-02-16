@@ -1,2 +1,2 @@
 # Our-Trips
-Simple responsive website relatited to hiking
+Simple responsive website related to hiking
