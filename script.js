@@ -24,3 +24,20 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
+
+// scroll to top button
+const scrollBtn = document.querySelector(".scroll-btn");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 600) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
+
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
